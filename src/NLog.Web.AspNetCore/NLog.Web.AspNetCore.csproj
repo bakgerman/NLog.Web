@@ -117,4 +117,8 @@ List of available Layout Renderers: https://nlog-project.org/config/?tab=layout-
       <LogicalName>ILLink.Descriptors.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
 </Project>
