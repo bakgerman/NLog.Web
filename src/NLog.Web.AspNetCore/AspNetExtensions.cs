@@ -157,9 +157,10 @@ namespace NLog.Web
         /// <summary>
         /// Enable NLog as logging provider for Microsoft Extension Logging, and explicit load NLog.config from path
         /// </summary>
-        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collission issue with NLog.Extension.Logging namespace</remarks>
+        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collision issue with NLog.Extension.Logging namespace</remarks>
         /// <param name="builder">The logging builder</param>
         /// <param name="configFileName">Path to NLog configuration file, e.g. nlog.config. </param>
+        [Obsolete("Use AddNLogWeb() on ILoggingBuilder")]
         public static ILoggingBuilder AddNLog(this ILoggingBuilder builder, string configFileName)
         {
             return AddNLogWeb(builder, configFileName);
@@ -187,9 +188,10 @@ namespace NLog.Web
         /// <summary>
         /// Enable NLog as logging provider for Microsoft Extension Logging, and explicit load NLog LoggingConfiguration
         /// </summary>
-        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collission issue with NLog.Extension.Logging namespace</remarks>
+        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collision issue with NLog.Extension.Logging namespace</remarks>
         /// <param name="builder">The logging builder</param>
         /// <param name="configuration">Config for NLog</param>
+        [Obsolete("Use AddNLogWeb() on ILoggingBuilder")]
         public static ILoggingBuilder AddNLog(this ILoggingBuilder builder, LoggingConfiguration configuration)
         {
             return AddNLogWeb(builder, configuration);
@@ -208,10 +210,11 @@ namespace NLog.Web
         /// <summary>
         /// Enable NLog as logging provider for Microsoft Extension Logging, and explicit load NLog LoggingConfiguration
         /// </summary>
-        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collission issue with NLog.Extension.Logging namespace</remarks>
+        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collision issue with NLog.Extension.Logging namespace</remarks>
         /// <param name="builder">The logging builder</param>
         /// <param name="configuration">Config for NLog</param>
         /// <param name="options">Options for registration of the NLog LoggingProvider and enabling features.</param>
+        [Obsolete("Use AddNLogWeb() on ILoggingBuilder")]
         public static ILoggingBuilder AddNLog(this ILoggingBuilder builder, LoggingConfiguration configuration, NLogAspNetCoreOptions options)
         {
             return AddNLogWeb(builder, configuration, options);
@@ -241,9 +244,10 @@ namespace NLog.Web
         /// <summary>
         /// Enable NLog as logging provider for Microsoft Extension Logging, and provide isolated LogFactory
         /// </summary>
-        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collission issue with NLog.Extension.Logging namespace</remarks>
+        /// <remarks>Recommended to use AddNLogWeb() to avoid name-collision issue with NLog.Extension.Logging namespace</remarks>
         /// <param name="builder"></param>
         /// <param name="factoryBuilder">Initialize NLog LogFactory with NLog LoggingConfiguration.</param>
+        [Obsolete("Use AddNLogWeb() on ILoggingBuilder")]
         public static ILoggingBuilder AddNLog(this ILoggingBuilder builder, Func<IServiceProvider, LogFactory> factoryBuilder)
         {
             return AddNLogWeb(builder, factoryBuilder);
