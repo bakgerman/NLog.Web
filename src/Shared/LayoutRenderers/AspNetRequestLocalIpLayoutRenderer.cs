@@ -25,7 +25,7 @@ namespace NLog.Web.LayoutRenderers
             var httpContext = HttpContextAccessor.HttpContext;
 
 #if ASP_NET_CORE
-            var connection = httpContext.TryGetConnection();
+            var connection = httpContext?.TryGetConnection();
             if (connection == null)
             {
                 return;
@@ -33,7 +33,7 @@ namespace NLog.Web.LayoutRenderers
 
             builder.Append(connection.LocalIpAddress?.ToString());
 #else
-            var request = httpContext.TryGetRequest();
+            var request = httpContext?.TryGetRequest();
             if (request == null)
             {
                 return;

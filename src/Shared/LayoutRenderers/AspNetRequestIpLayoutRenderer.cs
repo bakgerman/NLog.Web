@@ -62,7 +62,7 @@ namespace NLog.Web.LayoutRenderers
         {
             var httpContext = HttpContextAccessor.HttpContext;
 
-            var request = httpContext.TryGetRequest();
+            var request = httpContext?.TryGetRequest();
             if (request == null)
             {
                 return;
