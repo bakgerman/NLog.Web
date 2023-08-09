@@ -22,7 +22,7 @@ namespace NLog.Web.LayoutRenderers
     public class AspNetMvcControllerRenderer : AspNetLayoutRendererBase
     {
         /// <inheritdoc/>
-        protected override void DoAppend(StringBuilder builder, LogEventInfo logEvent)
+        protected override void Append(StringBuilder builder, LogEventInfo logEvent)
         {
             var key = "controller";
 

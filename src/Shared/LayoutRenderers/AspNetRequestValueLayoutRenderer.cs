@@ -68,9 +68,9 @@ namespace NLog.Web.LayoutRenderers
         public string Header { get; set; }
 
         /// <inheritdoc/>
-        protected override void DoAppend(StringBuilder builder, LogEventInfo logEvent)
+        protected override void Append(StringBuilder builder, LogEventInfo logEvent)
         {
-            var httpRequest = HttpContextAccessor.HttpContext.TryGetRequest();
+            var httpRequest = HttpContextAccessor?.HttpContext?.TryGetRequest();
             if (httpRequest == null)
             {
                 return;

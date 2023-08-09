@@ -18,7 +18,7 @@ namespace NLog.Web.LayoutRenderers
     public class AspNetRequestWebSocketRequestedProtocolsLayoutRenderer : AspNetLayoutMultiValueRendererBase
     {
         /// <inheritdoc/>
-        protected override void DoAppend(StringBuilder builder, LogEventInfo logEvent)
+        protected override void Append(StringBuilder builder, LogEventInfo logEvent)
         {
             // Not available on .NET 3.5
 #if ASP_NET_CORE
