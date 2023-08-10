@@ -55,7 +55,7 @@ namespace NLog.Web.LayoutRenderers
         {
             try
             {
-                var claimsPrincipal = HttpContextAccessor.HttpContext?.User;
+                var claimsPrincipal = HttpContextAccessor?.HttpContext?.User;
                 if (claimsPrincipal == null)
                 {
                     InternalLogger.Debug("aspnet-user-claim - HttpContext User is null");

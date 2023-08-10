@@ -22,7 +22,7 @@ namespace NLog.Web.LayoutRenderers
         {
             // Not available on .NET 3.5
 #if ASP_NET_CORE
-            var websockets = HttpContextAccessor.HttpContext?.TryGetWebSocket();
+            var websockets = HttpContextAccessor?.HttpContext?.TryGetWebSocket();
             if (websockets == null)
             {
                 return;
@@ -41,7 +41,7 @@ namespace NLog.Web.LayoutRenderers
             SerializeValues(websockets.WebSocketRequestedProtocols, builder, logEvent);
 
 #elif NET46_OR_GREATER
-            var httpContext = HttpContextAccessor.HttpContext;
+            var httpContext = HttpContextAccessor?.HttpContext;
             if (httpContext == null)
             {
                 return;

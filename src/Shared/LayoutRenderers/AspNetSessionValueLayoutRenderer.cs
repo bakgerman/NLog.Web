@@ -113,7 +113,7 @@ namespace NLog.Web.LayoutRenderers
                 return;
             }
 
-            var context = HttpContextAccessor.HttpContext;
+            var context = HttpContextAccessor?.HttpContext;
             if (context is null)
             {
                 return;

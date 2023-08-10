@@ -43,7 +43,7 @@ namespace NLog.Web.LayoutRenderers
                 }
             }
 
-            var items = HttpContextAccessor.HttpContext?.Items;
+            var items = HttpContextAccessor?.HttpContext?.Items;
             if (items == null || items.Count == 0)
             {
                 return;

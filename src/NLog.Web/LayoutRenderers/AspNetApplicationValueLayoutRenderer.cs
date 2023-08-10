@@ -76,7 +76,7 @@ namespace NLog.Web.LayoutRenderers
                 return;
             }
 
-            var application = HttpContextAccessor.HttpContext?.Application;
+            var application = HttpContextAccessor?.HttpContext?.Application;
             if (application is null)
             {
                 return;
