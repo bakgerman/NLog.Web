@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <TargetFrameworks>net461;netstandard2.0;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>net461;netstandard2.0;netcoreapp3.1;net5.0;net6.0;net7.0</TargetFrameworks>
     <Product>NLog.Web.AspNetCore v$(VersionPrefix)</Product>
     <Description>
 Integrates NLog as provider for Microsoft.Extensions.Logging, and provides NLog LayoutRenderers to enrich logging output with details from HttpContext.
@@ -86,6 +86,10 @@ List of available Layout Renderers: https://nlog-project.org/config/?tab=layout-
     <Title>ASP.NET Core 6 integration for NLog - .NET 6.0</Title>
     <DefineConstants>$(DefineConstants);ASP_NET_CORE</DefineConstants>
   </PropertyGroup>
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0' ">
+		<Title>ASP.NET Core 6 integration for NLog - .NET 7.0</Title>
+		<DefineConstants>$(DefineConstants);ASP_NET_CORE</DefineConstants>
+	</PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NLog.Extensions.Logging" Version="5.3.3" />
   </ItemGroup>
@@ -108,6 +112,9 @@ List of available Layout Renderers: https://nlog-project.org/config/?tab=layout-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net7.0' ">
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
   <ItemGroup>
     <Compile Include="..\Shared\**\*.cs" />
   </ItemGroup>
