@@ -18,7 +18,7 @@ namespace NLog.Web.LayoutRenderers
     /// </remarks>
     /// </summary>
     [LayoutRenderer("aspnet-web-transport")]
-    public class AspNetWebTransportLayoutRenderer : AspNetLayoutRendererBase
+    public class AspNetRequestWebTransportLayoutRenderer : AspNetLayoutRendererBase
     {
         /// <inheritdoc/>
         protected override void DoAppend(StringBuilder builder, LogEventInfo logEvent)
