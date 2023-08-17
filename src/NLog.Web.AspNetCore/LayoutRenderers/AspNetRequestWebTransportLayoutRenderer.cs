@@ -17,7 +17,7 @@ namespace NLog.Web.LayoutRenderers
     /// WebTransport is a preview feature.
     /// </remarks>
     /// </summary>
-    [LayoutRenderer("aspnet-web-transport")]
+    [LayoutRenderer("aspnet-request-web-transport")]
     public class AspNetRequestWebTransportLayoutRenderer : AspNetLayoutRendererBase
     {
         /// <inheritdoc/>

@@ -93,9 +93,17 @@ namespace NLog.Web.Internal
             setupBuilder.RegisterLayout<NLog.Web.Layouts.W3CExtendedLogLayout>("W3CExtendedLogLayout");
             setupBuilder.RegisterTarget<NLog.Web.Targets.Wrappers.AspNetBufferingTargetWrapper>("AspNetBufferingWrapper");
 
+#if NET7_0_OR_GREATER
+            setupBuilder.RegisterLayoutRenderer<NLog.Web.LayoutRenderers.AspNetRequestExtendedConnectLayoutRenderer>("aspnet-request-extended-connect");
+            setupBuilder.RegisterLayoutRenderer<NLog.Web.LayoutRenderers.AspNetRequestExtendedConnectProtocolLayoutRenderer>("aspnet-request-extended-connect-protocol");
+            setupBuilder.RegisterLayoutRenderer<NLog.Web.LayoutRenderers.AspNetRequestWebTransportLayoutRenderer>("aspnet-request-web-transport");
+            setupBuilder.RegisterLayoutRenderer<NLog.Web.LayoutRenderers.AspNetWebTransportSessionIdLayoutRenderer>("aspnet-web-transport-session-id");
+#endif
+
 #if NET5_0_OR_GREATER
             setupBuilder.RegisterLayoutRenderer<NLog.Web.LayoutRenderers.AspNetRequestStreamIdLayoutRenderer>("aspnet-request-stream-id");
 #endif
+
 #if NETCOREAPP3_0_OR_GREATER
             setupBuilder.RegisterLayoutRenderer<NLog.Web.LayoutRenderers.AspNetRequestHttpTransportTypeLayoutRenderer>("aspnet-request-http-transport-type");
             setupBuilder.RegisterLayoutRenderer<NLog.Web.LayoutRenderers.AspNetRequestInherentKeepAliveLayoutRenderer>("aspnet-request-inherent-keep-alive");
