@@ -4,6 +4,61 @@ See also [releases](https://github.com/NLog/NLog.Web/releases) and [milestones](
 
 Date format: (year/month/day)
 
+### Version 5.3.11 (2024/05/07)
+
+- **NLog.Web.AspNetCore**
+  - [#1037](https://github.com/NLog/NLog.Web/pull/1037) Updated dependency NLog.Extensions.Logging v5.3.11 (#1037) (@snakefoot)
+
+### Version 5.3.10 (2024/04/30)
+
+- **NLog.Web.AspNetCore**
+  - [#1035](https://github.com/NLog/NLog.Web/pull/1035) Updated dependency NLog.Extensions.Logging v5.3.10 (#1035) (@snakefoot)
+
+- **NLog.Web**
+  - [#1035](https://github.com/NLog/NLog.Web/pull/1035) Updated dependency NLog v5.3.2 (#1035) (@snakefoot)
+
+### Version 5.3.9 (2024/04/27)
+
+- **NLog.Web.AspNetCore**
+  - [#1031](https://github.com/NLog/NLog.Web/pull/1031) Updated dependency NLog.Extensions.Logging v5.3.9 (#1031) (@snakefoot)
+
+- **NLog.Web**
+  - [#1031](https://github.com/NLog/NLog.Web/pull/1031) Updated dependency NLog v5.3.1 (#1031) (@snakefoot)
+
+### Version 5.3.8 (2023/12/29)
+
+- **NLog.Web.AspNetCore**
+  - [#1012](https://github.com/NLog/NLog.Web/pull/1012) UseNLog includes EnvironmentName when loading NLog config (#1012) (@snakefoot)
+  - [#1020](https://github.com/NLog/NLog.Web/pull/1020) Updated dependency NLog.Extensions.Logging v5.3.8 (#1020) (@snakefoot)
+
+- **NLog.Web**
+  - [#1020](https://github.com/NLog/NLog.Web/pull/1020) Updated dependency NLog v5.2.8 (#1020) (@snakefoot)
+
+### Version 5.3.7 (2023/12/06)
+
+- **NLog.Web.AspNetCore**
+  - [#1010](https://github.com/NLog/NLog.Web/pull/1010) Added target platform for NET 8.0 (#1010) (@snakefoot)
+  - [#1011](https://github.com/NLog/NLog.Web/pull/1011) Updated dependency NLog.Extensions.Logging v5.3.7 (#1011) (@snakefoot)
+
+- **NLog.Web**
+  - [#1011](https://github.com/NLog/NLog.Web/pull/1011) Updated dependency NLog v5.2.7 (#1011) (@snakefoot)
+
+### Version 5.3.5 (2023/10/15)
+
+- **NLog.Web.AspNetCore**
+  - [#992](https://github.com/NLog/NLog.Web/pull/992) Updated dependency NLog.Extensions.Logging v5.3.5 (#992) (@snakefoot)
+
+- **NLog.Web**
+  - [#992](https://github.com/NLog/NLog.Web/pull/992) Updated dependency NLog v5.2.5 (#992) (@snakefoot)
+
+### Version 5.3.4 (2023/09/06)
+
+- **NLog.Web.AspNetCore**
+  - [#983](https://github.com/NLog/NLog.Web/pull/983) Updated dependency NLog.Extensions.Logging v5.3.4 (#983) (@snakefoot)
+
+- **NLog.Web**
+  - [#983](https://github.com/NLog/NLog.Web/pull/983) Updated dependency NLog v5.2.4 (#983) (@snakefoot)
+
 ### Version 5.3.3 (2023/08/06)
 
 - **NLog.Web.AspNetCore**
