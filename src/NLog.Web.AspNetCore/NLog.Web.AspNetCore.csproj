@@ -102,6 +102,7 @@ List of available Layout Renderers: https://nlog-project.org/config/?tab=layout-
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.ValueTuple" Version="4.6.2" />
     <None Include="N.png" Pack="true" PackagePath="" Visible="false" />
     <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
